@@ -1,0 +1,16 @@
+<mat-toolbar class="navbar"  color="primary">
+ 
+   <div class="container-navbar">
+    <img src="../../../assets/images/Logo_The_Simpsons.svg.png" width="100px" alt="">
+    
+    <a routerLink="/home">Home</a>
+   </div>
+  
+  </mat-toolbar>
+
+<div class="container">
+    <div *ngFor="let item of personajes" class="card">
+        <img src="{{item.image}}" width="100%" alt="">
+    <p>{{item.character}}</p>
+    </div>
+</div>

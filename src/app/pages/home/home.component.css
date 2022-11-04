@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.texto{
+    grid-column: 2/10;
+    grid-row: 4/8;
+    z-index: 1;
+}
+.imagen {
+    grid-column: 6/13;
+    grid-row: 4/8;
+    opacity: 0.4;
+    z-index: -100;
+}
+.intro{
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.boton {
+    background-color: rgb(216, 35, 35) !important;
+    color: aliceblue;
+    font-size: 1.5em;
+   
+}
+
+@media screen and (max-width: 600px) {
+    .imagen {
+        grid-column: 3/13;
+        grid-row: 2/11;
+        opacity: 0.4;
+        z-index: -100;
+    }
+  }
