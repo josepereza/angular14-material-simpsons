@@ -4,8 +4,15 @@
 ```
 docker build -t angular-nginx .
 docker run --rm -it -p 8080:80 simpsons-material
+
 or
+
 sudo docker run --name simpsons-nginx -d -p 8080:80   -v /home/jose/programas/angular/simpsons-material/dist/simpsons-material:/usr/share/nginx/html:ro -d nginx
+
+or
+
+docker compose up -d
+
 ```
 ## Check docker images
 
