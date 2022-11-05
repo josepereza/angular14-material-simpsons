@@ -13,6 +13,8 @@
  
     box-shadow: 5px 5px 5px gray;
     display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a{ 
