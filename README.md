@@ -1,4 +1,18 @@
 # SimpsonsMaterial
+## How to Dockerize an Angular Application with Nginx
+
+```
+docker build -t angular-nginx .
+docker run --rm -it -p 8080:80 simpsons-material
+```
+## Check docker images
+
+```
+docker images
+docker ps
+docker ps -aq
+```
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
