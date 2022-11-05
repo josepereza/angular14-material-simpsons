@@ -35,4 +35,9 @@
         opacity: 0.4;
         z-index: -100;
     }
+    .texto{
+        grid-column: 2/12;
+        grid-row: 4/8;
+        z-index: 1;
+    }
   }
