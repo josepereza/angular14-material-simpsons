@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http'
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { HomeComponent } from './pages/home/home.component';
 import { ListadoComponent } from './pages/listado/listado.component';
@@ -30,7 +30,7 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [[{provide: LocationStrategy, useClass: HashLocationStrategy}]],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
