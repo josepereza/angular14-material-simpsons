@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 export class SimpsonsService {
 
   constructor(private http:HttpClient) { }
-getAll(){
-  return this.http.get('https://thesimpsonsquoteapi.glitch.me/quotes?count=200')
+getAll(texto:string|null){
+  return this.http.get(`https://thesimpsonsquoteapi.glitch.me/quotes?count=200&character=${texto}`)
 }
 
 }

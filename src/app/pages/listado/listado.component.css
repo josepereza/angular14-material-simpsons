@@ -30,3 +30,20 @@ a{
     justify-content:space-between;
     margin: auto;
   }
+
+  .search{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .search-form {
+  grid-column: 2/11;
+  grid-row: 1/12;
+  z-index: 1;
+  }
+  .search-imagen{
+grid-column: 2/11;
+grid-row: 1/12;
+opacity: 0.3;
+z-index: -1;
+  }

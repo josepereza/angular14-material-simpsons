@@ -1,16 +1,31 @@
-<mat-toolbar class="navbar"  color="primary">
- 
-   <div class="container-navbar">
-    <img src="../../../assets/images/Logo_The_Simpsons.svg.png" width="100px" alt="">
-    
+<mat-toolbar class="navbar" color="primary">
+  <div class="container-navbar">
+    <img
+      src="../../../assets/images/Logo_The_Simpsons.svg.png"
+      width="100px"
+      alt=""
+    />
+
     <a routerLink="/home">Home</a>
-   </div>
-  
-  </mat-toolbar>
+  </div>
+</mat-toolbar>
 
 <div class="container">
-    <div *ngFor="let item of personajes" class="card">
-        <img src="{{item.image}}" width="100%" alt="">
-    <p>{{item.character}}</p>
-    </div>
+  <div class="search">
+    <form class="search-form">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Name to search</mat-label>
+        <input matInput placeholder="Search ..." [formControl]="name" />
+      </mat-form-field>
+    </form>
+    <img class="search-imagen"
+      src="../../../assets/images/Simpsons_FamilyPicture.png"
+      width="100%"
+      alt=""
+    />
+  </div>
+  <div *ngFor="let item of personajes" class="card">
+    <img src="{{ item.image }}" width="100%" alt="" />
+    <p>{{ item.character }}</p>
+  </div>
 </div>
